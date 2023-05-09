@@ -2,15 +2,67 @@ body{
     background-color:#F3F5FC;
 }
 
+
+ .logo{
+    margin-left: 5%;
+    margin-top: 2%;
+ }
+
+ .etry{
+    display: flex;
+    
+ }
+
+form{
+
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
 .word{
 
     position: relative;
     width: 577px;
     height: 48px;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin: 0 auto;
+   
     border: none;
     background-color:#F3F5FC;
     font-size: 32px;
     color: #0A3871;
+    outline: none;
+}
+
+.warning{
+    margin-left: 10%;
+    font-size: 12px;
+    margin-top: 30%;
+    color: #495057;
+}
+
+.buttons{
+  
+   margin-left: 10%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.encrypter{
+    border-radius: 15px;
+    background-color: #0A3871;
+    color: #F3F5FC;
+    width: 340px;
+    height: 67px;
+    margin-right: 12px;
+
+}
+
+.decrypter{
+    border-radius: 15px;
+    background-color: #D8DFE8F3;
+    color: #0A3871;
+    width: 340px;
+    height: 67px;
+    margin-left: 12px;
 }

@@ -5,26 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/ca98ef4dec.js" crossorigin="anonymous"></script>  
     <title>Encriptador de Palabras</title>
 </head>
 <body>
   <header>
     <nav>
-    <img src="./img/Logo.png" alt="logo-alura" >
+    <img class="logo" src="./img/Logo.png" alt="logo-alura" >
     </nav>
     <main>
-     <section>
+     <section class="entry">
       <form action="">
         <input type="text" class="word" value="ingrese texto aquí">
+        <span class="warning"><i class="fa-solid fa-circle-exclamation" style="color: #4f5163;"></i>  Solo letras minúsculas y sin acentos</span>
+        <div class="buttons">
+          <input class="encrypter" type="submit" value="Encriptar">
+          <input class="decrypter" type="submit" value="Desencriptar">
+        </div>
       </form>
      </section>
-     <section>
+     <section class="output">
 
      </section>
     </main>
     <footer>
         
     </footer>
-  </header>  
+  </header>
+  
 </body>
 </html>

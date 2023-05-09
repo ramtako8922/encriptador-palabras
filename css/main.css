@@ -8,25 +8,42 @@ body{
     margin-top: 2%;
  }
 
+ main{
+    display: flex;
+    flex-direction: row;
+    width: 100;
+    justify-content: space-around;
+ }
+
  .etry{
     display: flex;
+    
+    
     
  }
 
 form{
 
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
+    position: relative;
+    height: 944px;;
+    vertical-align:bottom ;
+
    
+}
+
+.container{
+
+    position: relative;
+    vertical-align: bottom;
+    top: 60%;
 }
 .word{
 
-    position: relative;
+   position: relative;
     width: 577px;
     height: 48px;
-    margin: 0 auto;
-   
+    margin-left: 20%;
+    vertical-align: top;
     border: none;
     background-color:#F3F5FC;
     font-size: 32px;
@@ -35,17 +52,18 @@ form{
 }
 
 .warning{
-    margin-left: 10%;
+    margin-left: 2%;
     font-size: 12px;
     margin-top: 30%;
     color: #495057;
 }
 
 .buttons{
-  
-   margin-left: 10%;
-   margin-top: 10px;
-   margin-bottom: 10px;
+    position: relative;
+    top: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline;
 }
 
 .encrypter{
@@ -65,4 +83,23 @@ form{
     width: 340px;
     height: 67px;
     margin-left: 12px;
+}
+
+.output{
+    height: 800x;
+    width: 400px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-shadow:  5px 5px 5px 5px  #a9a9ac;
+
+}
+
+.draw{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-top: 50%;
+    
 }

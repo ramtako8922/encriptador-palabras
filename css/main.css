@@ -1,0 +1,16 @@
+body{
+    background-color:#F3F5FC;
+}
+
+.word{
+
+    position: relative;
+    width: 577px;
+    height: 48px;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: none;
+    background-color:#F3F5FC;
+    font-size: 32px;
+    color: #0A3871;
+}

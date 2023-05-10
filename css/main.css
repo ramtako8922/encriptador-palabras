@@ -1,5 +1,6 @@
 body{
     background-color:#F3F5FC;
+    font-family: sans-serif;
 }
 
 
@@ -101,5 +102,11 @@ form{
     width: 80%;
     align-items: center;
     margin-top: 50%;
+    
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
     
 }

@@ -74,6 +74,7 @@ form{
 
 .buttons{
     position: relative;
+    width: 50%;
     top: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -151,7 +152,7 @@ form{
 
         display: flex;
         width: 100%;
-        margin-top: 75%;
+        margin-top: 70%;
         justify-content: center;
 
  }

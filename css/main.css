@@ -24,12 +24,19 @@ body{
  }
 
 form{
+    
 
     position: relative;
     height: 944px;;
     vertical-align:bottom ;
 
    
+}
+
+.content
+{
+    display:flex;
+    flex-direction: column;
 }
 
 .container{
@@ -41,8 +48,8 @@ form{
 .word{
 
    position: relative;
-    width: 577px;
-    height: 48px;
+    width: 60%;
+    height: 10%;
     margin-left: 20%;
     vertical-align: top;
     border: none;
@@ -50,8 +57,14 @@ form{
     font-size: 32px;
     color: #0A3871;
     outline: none;
+    text-transform: lowercase;
 }
 
+.clear{
+    font-size: 10px;
+    color: red;
+    margin-left:25%;
+}
 .warning{
     margin-left: 2%;
     font-size: 12px;
@@ -87,7 +100,7 @@ form{
 }
 
 .output{
-    height: 800x;
+    height: 780px;
     width: 400px;
     color: black;
     background-color: white;
@@ -107,6 +120,48 @@ form{
 
 .title{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     
+}
+
+.advice{
+    text-align:center;
+    font-size: 23px;
+
+
+}
+
+.word2{
+
+    position: relative;
+     width: 60%;
+     height: 30%;
+     margin-left: 20%;
+     vertical-align: top;
+     margin-top: 5%;
+     border: none;
+     background-color:white;
+     font-size: 28px;
+     color: black;
+     outline: none;
+     text-transform: lowercase;
+ }
+
+ .button{
+
+        display: flex;
+        width: 100%;
+        margin-top: 75%;
+        justify-content: center;
+
+ }
+
+ .copy{
+    border-radius: 15px;
+    background-color: white;
+    color: #0A3871;
+    width: 60%;
+    height: 67px;
+    border: #0A3871 solid 1px;
+
 }

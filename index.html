@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://kit.fontawesome.com/ca98ef4dec.js" crossorigin="anonymous"></script>  
-    <title>Encriptador de Palabras</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/ca98ef4dec.js" crossorigin="anonymous"></script>
+  <title>Encriptador de Palabras</title>
 </head>
+
 <body>
   <header>
     <nav>
-    <img class="logo" src="./img/Logo.png" alt="logo-alura" >
+      <img class="logo" src="./img/Logo.png" alt="logo-alura">
     </nav>
-    <main>
-     <section class="entry">
-      <form action="">
-        <input type="text" class="word" value="ingrese texto aquí">
-        <div class="container">
-        <span class="warning"><i class="fa-solid fa-circle-exclamation" style="color: #4f5163;"></i>  Solo letras minúsculas y sin acentos</span>
-        </div>
-        <div class="buttons">
-        <input class="encrypter" type="submit" value="Encriptar">
-          <input class="decrypter" type="submit" value="Desencriptar">
-        </div>
-      </form>
-     </section>
-     <section class="output">
-       <img class="draw" src="./img/muñeco.png" alt="muñeco" srcset="">
-       <h3  class="title">Ningún mensaje fue encontrado</h3>
-     </section>
-    </main>
-    <footer> 
-    </footer>
   </header>
+    <main>
+      <section class="entry">
+        
+        
+          <textarea id="word"  class="word" rows="10" cols="30" placeholder="ingrese texto aquí"></textarea>
+          <div class="content">
+          <span id="clear" class="clear"></span>
+        </div>
+          <div class="container" >
+            <span class="warning"><i class="fa-solid fa-circle-exclamation" style="color: #4f5163;"></i> Solo letras
+              minúsculas y sin acentos</span>
+          </div>
+          <div class="buttons">
+            <button onclick="SendText()" class="encrypter" type="submit" value="Encriptar">Encryptar</button>
+            <button onclick="SendText2()" class="decrypter"   value="Desencriptar">Desencrypta</button>
+          </div>
+      </section>
+       
+      <section class="output">
+        <img  id="draw"class="draw" src="./img/muñeco.png" alt="muñeco" srcset="" style="visibility: visible;">
+        <div class="output1" id="output1">
+        <h3 id="title" class="title">Ningún mensaje fue encontrado</h3>
+        <p class="advice"> Ingresa el texto que deseas encryptar o desencryptar</p>
+        
+      </div>
+      <div class="output2" id="output2" style="visibility: hidden;">
+        <textarea class="word2" name="word2" id="word2" cols="30" rows="10"></textarea>
+        <div class="button">
+          <button onclick="CopyText()" class="copy" id="copy">Copiar</button>
+        </div>
+      </div>
+
+      
+
+      
+
+    
+      </section>
+    </main>
+    <footer>
+    </footer>
 </body>
+<script src="./js/main.js"></script>
 </html>

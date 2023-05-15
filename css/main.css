@@ -14,24 +14,21 @@ body{
     flex-direction: row;
     width: 100;
     justify-content: space-around;
+    flex-wrap: wrap;
+    
  }
 
- .etry{
+ .entry{
     display: flex;
+    flex-direction: column;
+    height: 20%;
+
     
     
     
  }
 
-form{
-    
 
-    position: relative;
-    height: 944px;;
-    vertical-align:bottom ;
-
-   
-}
 
 .content
 {
@@ -49,12 +46,12 @@ form{
 
    position: relative;
     width: 60%;
-    height: 10%;
+    height: 5%;
     margin-left: 20%;
     vertical-align: top;
     border: none;
     background-color:#F3F5FC;
-    font-size: 32px;
+    font-size: 2vw;
     color: #0A3871;
     outline: none;
     text-transform: lowercase;
@@ -67,19 +64,18 @@ form{
 }
 .warning{
     margin-left: 2%;
-    font-size: 12px;
+    font-size: 0.8em;
     margin-top: 30%;
     color: #495057;
 }
 
-.buttons{
-    position: relative;
-    width: 50%;
-    top: 60%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline;
+.buttons {
+    display: flex;
+    width: 80%;
+    margin-top: 0;
+    
 }
+
 
 .encrypter{
     border-radius: 15px;
@@ -101,7 +97,7 @@ form{
 }
 
 .output{
-    height: 780px;
+    height: 90%;
     width: 400px;
     color: black;
     background-color: white;
@@ -121,13 +117,13 @@ form{
 
 .title{
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5em;
     
 }
 
 .advice{
     text-align:center;
-    font-size: 23px;
+    font-size: 1.3em;
 
 
 }
@@ -136,7 +132,7 @@ form{
 
     position: relative;
      width: 60%;
-     height: 30%;
+     height: auto;
      margin-left: 20%;
      vertical-align: top;
      margin-top: 5%;
@@ -152,8 +148,9 @@ form{
 
         display: flex;
         width: 100%;
-        margin-top: 70%;
+        margin: 5%;
         justify-content: center;
+
 
  }
 
@@ -166,3 +163,202 @@ form{
     border: #0A3871 solid 1px;
 
 }
+
+/*Estilos para versión de tablet*/
+
+@media   (max-width: 1101px)  {
+
+    section .entry{
+        display: flex;
+        height: 30px;  
+        
+     }
+
+     .word{
+
+        position: relative;
+         width: 60%;
+         height: 2%;
+         margin-left: 20%;
+         vertical-align: top;
+         border: none;
+         background-color:#F3F5FC;
+         font-size: 32px;
+         color: #0A3871;
+         outline: none;
+         text-transform: lowercase;
+        
+     }
+
+     .clear{
+        font-size: 1em;
+        color: red;
+        margin-left:25%;
+    }
+     
+
+     .container{
+
+       position: relative;
+        padding: 0px;
+        margin-bottom:2px;
+        
+       
+    }
+    
+     .warning{
+        margin-left: 2%;
+        font-size: 1em;
+        color: #495057;
+    }
+    
+
+    .buttons {
+        display: flex;
+        width: 80%;
+        margin-bottom: 10%;
+        margin-top: 0;
+        
+    }
+    
+    .encrypter{
+        border-radius: 15px;
+        background-color: #0A3871;
+        color: #F3F5FC;
+        width: 50%;
+        height: 67px;
+        margin-right: 12px;
+    
+    }
+    
+    .decrypter{
+        border-radius: 15px;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        width: 50%;
+        height: 67px;
+        margin-left: 12px;
+    }
+
+    .output{
+        display: inline-block;
+        height: 80%;
+        width: 60%;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow:  5px 5px 5px 5px  #a9a9ac;
+
+        
+    
+    }
+
+    .draw{
+        display: none;
+        margin: 0px;
+    }
+
+    .word2{
+
+        position: relative;
+         width: 60%;
+         height: auto;
+         margin-left: 40%;
+         vertical-align: top;
+         margin-top: 5%;
+         border: none;
+         background-color:white;
+         font-size: 2em;
+         color: black;
+         outline: none;
+         text-transform: lowercase;
+     }
+    
+    
+    .button{
+
+        display: flex;
+        width: 100%;
+        margin: 30px;
+        
+        justify-content: center;
+
+ }
+
+    
+  }
+
+  /*Estilos para versión de smartphone*/
+
+@media   (max-width: 550px)  {
+
+    
+    
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top: 0;
+        
+    }
+
+    .encrypter{
+        border-radius: 15px;
+        background-color: #0A3871;
+        color: #F3F5FC;
+        width: 50%;
+        height: 67px;
+        margin-bottom: 4%;
+       margin-left: 0;
+    
+    }
+    
+    .decrypter{
+        border-radius: 15px;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        width: 50%;
+        height: 67px;
+
+       
+        
+       
+    }
+
+    .word2{
+
+        position: relative;
+         width: 80%;
+         height: auto;
+         margin-left: 15%;
+         vertical-align: top;
+         margin-top: 5%;
+         border: none;
+         background-color:white;
+         font-size: 2em;
+         color: black;
+         outline: none;
+         text-transform: lowercase;
+     }
+
+
+    .button{
+
+        display: flex;
+        width: 100%;
+        margin: 2%;
+        justify-content: center;
+
+
+ }
+
+    
+    
+ }
+
+    
+  

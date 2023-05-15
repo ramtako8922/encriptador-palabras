@@ -59,7 +59,7 @@
  function ShowOutput() {
  draw.style.display="none";
  contenido.style.display="none";
- contenido2.style.visibility="visible";
+ contenido2.style.display="inline-block"
  const textEncrypted=Encrypter(word.value);
  word2.value=textEncrypted;
  word.value=""
@@ -73,7 +73,7 @@
 
   draw.style.display="none";
   contenido.style.display="none";
-  contenido2.style.visibility="visible";
+  contenido2.style.display="inline-block"
   const textDecrypted=Decrypter(word.value);
   word2.value=textDecrypted;
   word.value=""
@@ -85,56 +85,59 @@
 
 function SendText(){
      let warning=""
-     let regexPalabra=/^[a-zA-Z\u00C0-\u017F]+$/
+     let regexPalabra=   /^[a-z\s]+$/   
      let enter=false;
      document.getElementById("clear").innerHTML=""
     
 
-    if (word.value=="") {
+    if (word.value.length==0) {
     warning+=`el texto no puede quedar vacio <br>`
     enter=true
-   
-    } 
-
-    if (!regexPalabra.test(word.value!="")) {
-       
-     warning+=`el texto no puede tener tildes <br>`
-     enter=true
-        
- }
-
-    if(enter){
-      document.getElementById("clear").innerHTML=warning;
-
-     }else{
-        document.getElementById("clear").innerHTML="enviado";
-
-        ShowOutput();
-
     }
+    
+    else{
+    if (!regexPalabra.test(word.value)) {
+       
+      warning+=`el texto no puede tener tildes <br>`
+      enter=true
+         
+  }
+}
+     if(enter){
+       document.getElementById("clear").innerHTML=warning;
+ 
+      }else{
+         document.getElementById("clear").innerHTML="enviado";
+ 
+         ShowOutput();
+ 
+     }
+     
+
+    
   }
      //Fucion que valida el texto antes de desencriptarlo
     
     function SendText2(){
-       let warning=""
-       let regexPalabra=/^[a-zA-Z\u00C0-\u017F]+$/
-       let enter=false;
-       document.getElementById("clear").innerHTML=""
-      
-  
-      if (word.value=="") {
-      warning+=`el texto no puede quedar vacio <br>`
-      enter=true
+      let warning=""
+      let regexPalabra=   /^[a-z\s]+$/   
+      let enter=false;
+      document.getElementById("clear").innerHTML=""
      
-      } 
-  
-      if (!regexPalabra.test(word.value!="")) {
-         
+ 
+     if (word.value.length==0) {
+     warning+=`el texto no puede quedar vacio <br>`
+     enter=true
+     }
+     
+     else{
+     if (!regexPalabra.test(word.value)) {
+        
        warning+=`el texto no puede tener tildes <br>`
        enter=true
           
    }
-  
+ }
       if(enter){
         document.getElementById("clear").innerHTML=warning;
   
@@ -144,12 +147,10 @@ function SendText(){
           ShowOutput2();
   
       }
-  
       
-  
-
-  
-  }
+ 
+     
+   }
    
 
 

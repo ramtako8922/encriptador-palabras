@@ -90,7 +90,7 @@ function SendText(){
      document.getElementById("clear").innerHTML=""
     
 
-    if (word.value.length==0) {
+    if (word.value.trim()=="") {
     warning+=`el texto no puede quedar vacio <br>`
     enter=true
     }
@@ -98,7 +98,7 @@ function SendText(){
     else{
     if (!regexPalabra.test(word.value)) {
        
-      warning+=`el texto no puede tener tildes <br>`
+      warning+=`el texto no puede tener tildes ni caracteres especiales <br>`
       enter=true
          
   }

@@ -8,16 +8,16 @@ const contenido2 = document.getElementById("output2");
 
 //Funcion que incrypta la palabra ingresada por el usuario de acuerdo a una matriz que contine por cual cadadena se rempleza la vocal de la palabra
 function Encrypter(StringEncryptado) {
-  let matriz = [["a", "4/\@/-\^aye(LД"], ["b", "I3 8 13 |3 ß !3 (3 /3 )3 |-] j3 6"], ["c", "[ ¢ { < ( ©"],
-  ["d", ") |) (| [) I> |> ? T) I7 cl |} > |]"],["e", "3 & £ € ë [- |=-"],["f", "|= ƒ |# ph /= v"], 
-  ["g", "& 6 (_+ 9 C- gee (?, [, {, <- (."],["h", "# /-/ [-] ]-[ )-( (-) :-: |~| |-| ]~[ }{ !-! 1-1 \-/ I+I /-\'"],
-  ["i", "1 [] | ! eye 3y3 ]["], ["j", ",_| _| ._| ._] _] ,_] ] ; 1"], ["k", ">| |< /< 1< |c |( |{"],
-  ["l", "1 £ 7 |_ |"], ["m", "\/\ /V\ JVI [V] []V[] |\/| ^^ <\/> {V} (v) (V) |V|"],
-  ["n", "^/ |\| /\/ [\] <\> {\} |V /V И ^ ท"], ["o", "0 Q () oh [] p <> Ø"],
-  ["p", '|* |o |º ? |^ |> |" 9 []D |° |7'], ["q", '(_,) 9 ()_ 2 0_ <| &'], ["r", '(_,) 9 ()_ 2 0_ <| &'],
-  ["s", '5 $ z § ehs es 2'], ["t", "7 + -|- '][' † "|" ~|~"], ["u", "(_) |_| v L| µ บ"],
-   ["v", "\/ |/ \|"], ["w", "\/\/ VV \N '// \\' \^/ (n) \V/ \X/ \|/ \_|_/ \_:_/ Ш Щ uu 2u \\//\\// พ v²"],
-   ["x", ">< Ж }{ ecks × ? )( ]["], ["y", "j `/ Ч 7 \|/ ¥ \//"], ["z", "2 7_ -/_ % >_ s ~/_ -\_ -|_"]
+  let matriz = [["a", "4"], ["b", "b"], ["c","["],
+  ["d", ")"],["e", "£"],["f", "|="], 
+  ["g","gee"],["h", "/-/"],
+  ["i", "!"], ["j", "_|"], ["k", "|{"],
+  ["l", "|_"], ["m", "[V]"],
+  ["n", "<\>"], ["o", "oh"],
+  ["p", '|7'], ["q",'<|'], ["r", '12'],
+  ["s", '§'], ["t", "-|-"], ["u", "µ"],
+  ["v", "[\]"], ["w", "v²"],
+  ["x", "ecks"], ["y", "Ч"], ["z", "%"]
 ];
    console.log(matriz[0])
   StringEncryptado = StringEncryptado.toLowerCase();
@@ -39,18 +39,17 @@ function Encrypter(StringEncryptado) {
 
 //Funcion que desencrypta la palabra ingresada por el usuario de acuerdo a una matriz que contiene por cual vocal se rempleza la cadena de la palabra
 function Decrypter(StringDecrypted) {
-  let matriz = [["a", "4/\@/-\^aye(LД"], ["b", "I3 8 13 |3 ß !3 (3 /3 )3 |-] j3 6"], ["c", "[ ¢ { < ( ©"],
-  ["d", ") |) (| [) I> |> ? T) I7 cl |} > |]"],["e", "3 & £ € ë [- |=-"],["f", "|= ƒ |# ph /= v"], 
-  ["g", "& 6 (_+ 9 C- gee (?, [, {, <- (."],["h", "# /-/ [-] ]-[ )-( (-) :-: |~| |-| ]~[ }{ !-! 1-1 \-/ I+I /-\'"],
-  ["i", "1 [] | ! eye 3y3 ]["], ["j", ",_| _| ._| ._] _] ,_] ] ; 1"], ["k", ">| |< /< 1< |c |( |{"],
-  ["l", "1 £ 7 |_ |"], ["m", "\/\ /V\ JVI [V] []V[] |\/| ^^ <\/> {V} (v) (V) |V|"],
-  ["n", "^/ |\| /\/ [\] <\> {\} |V /V И ^ ท"], ["o", "0 Q () oh [] p <> Ø"],
-  ["p", '|* |o |º ? |^ |> |" 9 []D |° |7'], ["q", '(_,) 9 ()_ 2 0_ <| &'], ["r", '(_,) 9 ()_ 2 0_ <| &'],
-  ["s", '5 $ z § ehs es 2'], ["t", "7 + -|- '][' † "|" ~|~"], ["u", "(_) |_| v L| µ บ"],
-   ["v", "\/ |/ \|"], ["w", "\/\/ VV \N '// \\' \^/ (n) \V/ \X/ \|/ \_|_/ \_:_/ Ш Щ uu 2u \\//\\// พ v²"],
-   ["x", ">< Ж }{ ecks × ? )( ]["], ["y", "j `/ Ч 7 \|/ ¥ \//"], ["z", "2 7_ -/_ % >_ s ~/_ -\_ -|_"]
+  let matriz =  [["a", "4"], ["b", "8"], ["c","["],
+  ["d", ")"],["e", "£"],["f", "|="], 
+  ["g","gee"],["h", "/-/"],
+  ["i", "!"], ["j", ",_|"], ["k", "|{"],
+  ["l", "|_"], ["m", "[V]"],
+  ["n", "<\>"], ["o", "oh"],
+  ["p", '|7'], ["q",'<|'], ["r", '12'],
+  ["s", '§'], ["t", "-|-"], ["u", "µ"],
+  ["v", "\|"], ["w", "v²"],
+  ["x", "ecks"], ["y", "Ч"], ["z", "%"]
 ];
-
   StringDecrypted = StringDecrypted.toLowerCase();
 
   for (let index = 0; index < matriz.length; index++) {

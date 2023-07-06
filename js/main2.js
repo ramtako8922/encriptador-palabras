@@ -19,7 +19,7 @@ function Encrypter(StringEncryptado) {
   ["v", "[\]"], ["w", "v²"],
   ["x", "ecks"], ["y", "Ч"], ["z", "%"]
 ];
-   console.log(matriz[0])
+  
   StringEncryptado = StringEncryptado.toLowerCase();
 
   for (let index = 0; index < matriz.length; index++) {
